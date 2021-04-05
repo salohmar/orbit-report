@@ -34,6 +34,7 @@ export class AppComponent {
   }
 
   search(searchTerm: string): void {
+     console.log("ping");
     let matchingSatellites: Satellite[] = [];
     searchTerm = searchTerm.toLowerCase();
     for(let i=0; i < this.sourceList.length; i++) {

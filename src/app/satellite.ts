@@ -15,12 +15,11 @@ export class Satellite {
         this.launchDate = launchDate;
     }
 
-    shouldShowWarning () {
+    shouldShowWarning (): boolean {
         if (this.type === 'Space Debris') {
-            this.addWarning = true;
-            this.color = 'red';
+            return true;
         } else {
-            this.addWarning = false;
+            return false;
         }
     }
 
